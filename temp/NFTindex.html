@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/styles/NFTindex.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header id="header">
+        <h2 class="webname">Indo Meta Robots</h2>
+        <div class="rgb"></div>
+    </header>
+
+    <main>
+        <div id="container">
+            <div class="droplines">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="dropdown">
+                <img id="dropIMG" src="/images/firstIMG.png" alt="Image">
+            </div>
+            <div id="elements">
+                <img id="obj1" class="objects" src="/images/handholdSword1.png" alt="Image">
+                <img id="obj2" class="objects" src="/images/handholdGuitar1.png" alt="Image">
+                <img id="obj3" class="objects" src="/images/handholdHockey.png" alt="Image">
+                <img id="obj4" class="objects" src="/images/handholdHammer.png" alt="Image">
+                <img id="obj5" class="objects" src="/images/handholdGun.png" alt="Image">
+                <img id="obj6" class="objects" src="/images/handholdRacket.png" alt="Image">
+            </div>
+        </div>
+
+        <div class="infoSec">
+            <div class="para">
+                <h2 class="description">DESCRIPTION:-</h2>
+                <p class="para1"> There are unique collection of 1000 funky and scary Robot characters which are
+                    generated algorithmically.</p>
+                <p class="para2">As a promo launch there will be release of only 25 Robot Characters which would be
+                    priced at only 5$,
+                    after which there will be subsequent launch of this Robot characters in different parts with price
+                    increments.</p>
+                <p class="para3">But there is no worry for the initial buyer of this Robot Character as they can avail
+                    20% of Price
+                    discount on their each subsequent purchase.</p>
+                <p class="para4">Therefore what you are waiting for!! Come, lets shake our hands and be the part of
+                    IndoMetaRobots.</p>
+            </div>
+        </div>
+
+        <div id="vedioSec">
+            <video id="bubble-video" autoplay loop muted src="/images/Air Bubbles - 31611.mp4"></video>
+            <div id="nfts">
+                <img src="/images/665.png" alt="NFT Image">
+                <img src="/images/671.png" alt="NFT Image">
+                <img src="/images/674.png" alt="NFT Image">
+                <img src="/images/676.png" alt="NFT Image">
+                <img src="/images/678.png" alt="NFT Image">
+                <img src="/images/679.png" alt="NFT Image">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Follow Us</h3>
+        <div class="follow">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/IndoMetaRobots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-twitter" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/indometarobots/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-instagram" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/indometarobots21">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa fa-telegram" aria-hidden="true"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="rgb"></div>
+        <div class="lastSection">
+            <h2 class="end">Indo Meta Robots</h2>
+        </div>
+    </footer>
+
+    <script src="/scripts/NFTindex.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script type="text/javascript">
+        gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".infoSec",
+                    start: "center center",
+                    end: "bottom top",
+                    markers: false,
+                    scrub: true,
+                    pin: true
+                }
+            })
+            .from(".description", {
+                y: innerHeight * -1,
+                rotate: 180
+            })
+            .from(".para1", {
+                x: innerWidth * 1
+            })
+            .from(".para2", {
+                x: innerWidth * -1
+            })
+            .from(".para3", {
+                x: innerWidth * 1
+            })
+            .from(".para4", {
+                x: innerWidth * -1
+            })
+    </script>
+</body>
+
+</html>

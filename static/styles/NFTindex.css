@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+@media only screen and (min-width: 600px) {
+    #obj1 {
+        position: fixed;
+        top: 0px;
+        left: 30px;
+        animation: animateObj1 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj1 {
+        0% {
+            top: 0px;
+        }
+
+        50% {
+            top: 8px;
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+
+    #obj2 {
+        position: fixed;
+        top: -10px;
+        right: 50vw;
+        animation: animateObj2 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj2 {
+        0% {
+            top: -10px;
+        }
+
+        50% {
+            top: -2px;
+        }
+
+        100% {
+            top: -10px;
+        }
+    }
+
+    #obj3 {
+        position: fixed;
+        bottom: 80px;
+        left: 20vw;
+        animation: animateObj3 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj3 {
+        0% {
+            bottom: 80px;
+            transform: rotateZ(0deg);
+        }
+
+        50% {
+            bottom: 72px;
+            transform: rotateZ(-7deg);
+
+        }
+
+        100% {
+            bottom: 80px;
+            transform: rotateZ(0deg);
+        }
+    }
+
+    #obj4 {
+        position: fixed;
+        left: 50vw;
+        animation: animateObj4 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj4 {
+        0% {
+            transform: rotateZ(0deg);
+            left: 50vw;
+        }
+
+        50% {
+            transform: rotateZ(-10deg);
+            left: 50.5vw;
+        }
+
+        100% {
+            transform: rotateZ(0deg);
+            left: 50vw;
+        }
+    }
+
+    #obj5 {
+        position: fixed;
+        left: 6vw;
+        top: 40vh;
+        animation: animateObj5 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj5 {
+        0% {
+            top: 40vh;
+        }
+
+        50% {
+            top: 41vh;
+        }
+
+        100% {
+            top: 40vh;
+        }
+    }
+
+    #obj6 {
+        position: fixed;
+        bottom: 100px;
+        right: 0px;
+        animation: animateObj6 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj6 {
+        0% {
+            bottom: 100px;
+        }
+
+        50% {
+            bottom: 92px;
+        }
+
+        100% {
+            bottom: 100px;
+        }
+    }
+
+    #nfts {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-content: center;
+        gap: 20vh 5vw;
+    }
+
+    #nfts img {
+        width: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 599px) {
+    #obj1 {
+        position: fixed;
+        top: 0px;
+        left: 30px;
+        animation: animateObj1 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj1 {
+        0% {
+            top: 0px;
+        }
+
+        50% {
+            top: 8px;
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+
+    #obj2 {
+        position: fixed;
+        top: -10px;
+        right: 30vw;
+        animation: animateObj2 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj2 {
+        0% {
+            top: -10px;
+        }
+
+        50% {
+            top: -2px;
+        }
+
+        100% {
+            top: -10px;
+        }
+    }
+
+    #obj3 {
+        position: fixed;
+        bottom: 10vh;
+        left: 20vw;
+        animation: animateObj3 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj3 {
+        0% {
+            bottom: 11;
+            transform: rotateZ(0deg);
+        }
+
+        50% {
+            bottom: 10;
+            transform: rotateZ(-7deg);
+
+        }
+
+        100% {
+            bottom: 11;
+            transform: rotateZ(0deg);
+        }
+    }
+
+    #obj4 {
+        position: fixed;
+        left: 50vw;
+        animation: animateObj4 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj4 {
+        0% {
+            transform: rotateZ(0deg);
+            left: 50vw;
+        }
+
+        50% {
+            transform: rotateZ(-10deg);
+            left: 50.5vw;
+        }
+
+        100% {
+            transform: rotateZ(0deg);
+            left: 50vw;
+        }
+    }
+
+    #obj5 {
+        position: fixed;
+        left: 6vw;
+        top: 40vh;
+        animation: animateObj5 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+    @keyframes animateObj5 {
+        0% {
+            top: 40vh;
+        }
+
+        50% {
+            top: 41vh;
+        }
+
+        100% {
+            top: 40vh;
+        }
+    }
+
+    #obj6 {
+        position: fixed;
+        bottom: 100px;
+        right: 0px;
+        animation: animateObj6 2s ease-in-out infinite;
+        animation-delay: 2s;
+    }
+
+
+    @keyframes animateObj6 {
+        0% {
+            bottom: 100px;
+        }
+
+        50% {
+            bottom: 92px;
+        }
+
+        100% {
+            bottom: 100px;
+        }
+    }
+
+    #nfts {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-content: center;
+        gap: 20vh 30vw;
+    }
+
+    #nfts img {
+        width: 100px;
+    }
+}
+
+.rgb {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, rgb(0, 60, 255), rgb(0, 255, 0), red, cyan);
+    animation: animate 1s linear 3;
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.webname {
+    color: white;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#container {
+    transform: translateY(-500px);
+    animation: dropdown 1.5s ease-in;
+    height: 95vh;
+    overflow: hidden;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+@keyframes dropdown {
+    70% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.droplines {
+    display: flex;
+    justify-content: center;
+    gap: 50vw
+}
+
+.line {
+    background-color: white;
+    width: 2px;
+    height: 100px;
+}
+
+.dropdown {
+    text-align: center;
+}
+
+.dropdown img {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#elements img {
+    width: 100px;
+    pointer-events: none;
+}
+
+.collections {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#vedioSec {
+    background: url(../images/Air\ Bubbles\ -\ 31611.mp4);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#bubble-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+
+.infoSec {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px 0px;
+    overflow: hidden;
+}
+
+.infoSec p {
+    padding: 10px;
+}
+
+footer {
+    /* width: 100vw; */
+    height: 100vh;
+    background-color: white;
+}
+
+footer h3 {
+    height: 10%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.follow {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow ul {
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: rotate(-25deg) skew(25deg);
+}
+
+.follow ul li {
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+}
+
+.follow ul li::before {
+    content: " ";
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background: #2a2a2a;
+    transform-origin: top;
+    transform: skewX(-41deg);
+}
+
+.follow ul li::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #2a2a2a;
+    transform-origin: right;
+    transform: skewY(-41deg);
+}
+
+.follow ul li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 30px !important;
+    transition: 0.2s;
+}
+
+.follow ul li:hover span {
+    z-index: 10;
+    transition: 0.3s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+ul li:hover span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+ul li:hover span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+
+ul li:hover span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+
+ul li:hover span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+
+ul li:hover span:nth-child(1){
+    transform: translate(0px, 0px);
+    opacity: 0.2;
+}
+
+ul li:nth-child(1):hover span {
+    background: #0077B5;
+}
+
+ul li:nth-child(2):hover span {
+    background: #e24562;
+}
+
+ul li:nth-child(3):hover span {
+    background: #55acee;
+}
+
+.lastSection {
+    height: 12%;
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    /* padding: 10px; */
+}
+
+.end {
+    padding-top: 15px;
+}
+
